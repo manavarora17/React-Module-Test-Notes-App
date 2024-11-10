@@ -1,0 +1,222 @@
+/* Header styles for the notes section */
+.notesHeader {
+  height: 50px;
+  background: #001F8B;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.notesGroup {
+  margin-left: 10px;
+  width: 68px;
+  height: 65px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.groupName {
+  color: #fff;
+  font-family: Roboto;
+  font-weight: bold;
+  letter-spacing: 0.48px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Container for notes and date (desktop and mobile) */
+.NotesAndDate, .NotesAndDateMobile {
+  overflow-y: auto;
+  height: 60vh;
+  background-color: #DAE5F5;
+}
+
+/* Container for each note card */
+.NoteCard {
+  background-color: white;
+  border: 1px solid #ddd;  /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Add space inside the card */
+  margin: 32px; /* Add space between notes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+  position: relative;
+}
+
+/* Container for the date and time under the note */
+.DateAndTimeContainer {
+  display: flex;
+  justify-content: flex-end; /* Align date and time to the right */
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #353535;
+  font-weight: bold;
+  width: 100%;
+}
+
+.Time {
+  margin: 10px;
+  font-size: 14px;
+  color: #353535;
+}
+
+.Date {
+  margin: 10px;
+  font-size: 14px;
+  color: #353535;
+}
+.Separator { /* Same size as date and time */
+  margin:1px 10px;
+  font-size: 30px; /* Add horizontal space around the dot */
+  color: #000; /* Set color of the dot */
+  
+}
+.SeparatorMobile { /* Same size as date and time */
+  margin:5px 10px;
+  font-size: 30px; /* Add horizontal space around the dot */
+  color: #000000; /* Set color of the dot */
+  
+}
+/* Flexbox layout for the note text */
+.Text {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 50px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  justify-content: space-between; /* Ensure text is aligned properly */
+}
+
+/* Mobile styles for text and date */
+.TextMobile {
+  display: flex;
+  margin-left: -38px;
+  font-weight: 500;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+/* Mobile container for date and time */
+.DateAndTimeMobile {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 25px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #353535;
+  font-weight: bold;
+}
+
+/* Styles for text input container */
+.Textarea {
+  background-color: #001F8B; /* Set the background color to blue */
+  width: 100%; /* Ensure it takes up the full width of its container */
+  height: 28vh; /* Set height to 100% to fill the container */
+  color: white; /* Ensure text is readable on the blue background */
+  border: none; /* Remove the default border */
+  padding: 25px; /* Add padding for inner spacing */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  resize: none; /* Prevent resizing */
+  border-radius: 9px; /* Rounded corners if needed */
+  overflow: hidden; /* Hide any overflow */
+  margin: 0; /* Reset margin to avoid extra space */
+}
+.TextInput {
+  height: 100%; /* Make the input fill the parent element */
+  width: 100%; /* Ensure full width within the container */
+  padding: 20px; /* Add padding for inner spacing */
+  border-radius: 9px; /* Rounded corners */
+  resize: none; /* Prevent resizing */
+  border: none; /* Remove border */
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.TextInput::placeholder {
+  color: #070142;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+}
+.SendImg {
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.SendImgMobile {
+  position: fixed; /* Fixes the position relative to the viewport */
+  right: 12%; /* Position it 12% from the right */
+  bottom: 7%; /* Position it 15% from the bottom */
+  cursor: pointer;
+  z-index: 20; /* Ensure it's on top of other elements */
+}
+
+/* Mobile textarea */
+.TextareaMobile {
+  position: fixed; /* Fixes the textarea to the bottom of the screen */
+  bottom: 0; /* Position it at the bottom */
+  left: 0; /* Align it to the left side */
+  background-color: #001F8B; /* Set the background color to blue */
+  width: 100%; /* Ensure it takes up the full width of its container */
+  height: 25vh; /* Set height to a fixed value to prevent overlap */
+  color: white; /* Ensure text is readable on the blue background */
+  border: none; /* Remove the default border */
+  padding: 23px; /* Add padding for inner spacing */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  resize: none; /* Prevent resizing */
+  border-radius: 9px; /* Rounded corners */
+  overflow: hidden; /* Hide any overflow */
+  margin: 0; /* Ensure padding is included in the width and height */
+  z-index: 10; 
+
+}
+.TextInputMobile {
+  height: 100%; /* Make the input fill the parent element */
+  width: 100%; /* Ensure full width within the container */
+  padding: 20px; /* Add padding */
+  border-radius: 9px; /* Rounded corners */
+  resize: none; /* Prevent resizing */
+  border: none; /* Remove border */
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+  box-sizing: border-box;/* Include padding in the width and height */
+}
+.TextInputMobile::placeholder {
+  color: #9a9a9a;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+}
+/* Notes container for mobile */
+.NotesAndDateMobile {
+  overflow-y: auto;
+  height: 65vh;
+  background-color: #DAE5F5;
+}
+
+/* Mobile-specific note text styling */
+.TextMobile {
+  display: flex;
+  margin-left: 0; /* Adjusted to prevent overflow */
+  margin-right: 10px; /* Reduced right margin */
+  text-align: left; /* Align text to the left */
+  overflow-wrap: break-word; /* Handle long text */
+}

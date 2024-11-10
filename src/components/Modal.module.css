@@ -1,0 +1,206 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(47, 47, 47, 0.75);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    width: 590px;
+    height: 187px;
+    border-radius: 6px;
+    background: #fff;
+    padding: 35px;
+  }
+  .modalBackground, .modalBackgroundMobile {
+    z-index: 9999; /* Ensure the modal is above other elements */
+  }
+  
+  .closeButton {
+    background: transparent;
+    border: none;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalHeading {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 160%;
+    letter-spacing: 1.015px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .modalGrp {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 160%;
+    letter-spacing: 0.956px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .modalText {
+    width: 375px;
+    height: 35px;
+    border-radius: 22px;
+    border: 2px solid #ccc;
+    color: #000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .modalText::placeholder {
+    color: #979797;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 160%;
+    letter-spacing: 0.805px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .modalColor {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 160%;
+    letter-spacing: 0.956px;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: relative;
+    bottom: 10px;
+  }
+  .colorButton {
+    cursor: pointer;
+  }
+  .colorButton:hover {
+    transform: translate3d(0px, -2px, 0px);
+  }
+  
+  .modalCreate {
+    width: 154px;
+    height: 38px;
+    background: #000;
+    border-radius: 11px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 160%;
+    letter-spacing: 0.7px;
+    position: relative;
+    top: 10px;
+    left: 450px;
+    cursor: pointer;
+  }
+  
+  
+  /* Mobile Modal Background */
+.modalBackgroundMobile {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(47, 47, 47, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Mobile Modal Container */
+.modalContainerMobile {
+  width: 90%;
+  max-width: 400px; /* Adjusted for smaller screens */
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 300px;
+}
+
+/* Input Field */
+.modalTextMobile {
+  width: 100%;
+  height: 35px;
+  border-radius: 22px;
+  border: 2px solid #ccc;
+  color: #000;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.modalTextMobile::placeholder {
+  color: #979797;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.7px;
+}
+
+/* Close Button */
+.closeButtonMobile {
+  background: transparent;
+  border: none;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Color Button Container */
+.modalColorContainer {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent buttons from wrapping */
+  gap: 10px; /* Space between buttons */
+  padding-bottom: 10px; /* Extra padding for better appearance */
+}
+
+/* Individual Color Button */
+.colorButton {
+  flex: 0 0 auto; /* Prevent buttons from shrinking */
+  height: 35px; /* Adjusted size for smaller screens */
+  width: 35px; /* Adjusted size for smaller screens */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Create Button */
+.modalCreateMobile {
+  width: 120px; /* Adjusted for smaller screens */
+  height: 35px;
+  float: right;
+  background:#16008B;
+  ;
+  border-radius: 11px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Adjusted size for better readability */
+  font-weight: 400;
+  line-height: 160%;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 120px;
+}
